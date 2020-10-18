@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# coding=utf-8
+# author: @netmanchris
 # -*- coding: utf-8 -*-
 """
 This module provides helper functions and holds the main client object
