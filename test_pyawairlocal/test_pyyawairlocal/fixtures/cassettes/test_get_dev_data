@@ -1,0 +1,32 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.24.0
+    method: GET
+    uri: http://10.101.20.52/air-data/latest
+  response:
+    body:
+      string: '{"timestamp":"2020-10-18T21:19:54.108Z","score":86,"temp":25.82,"humid":27.40,"co2":514,"voc":34,"pm25":1,"lux":92.9,"spl_a":54.8}'
+    headers:
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Connection:
+      - Keep-Alive
+      Content-Type:
+      - application/json
+      Pragma:
+      - no-cache
+      Transfer-Encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+version: 1
