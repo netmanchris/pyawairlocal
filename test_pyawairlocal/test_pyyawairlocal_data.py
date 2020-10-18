@@ -28,7 +28,7 @@ class TestGetDevConfig(TestCase):
     Test Case for pyawairlocal.data.get_dev_config function
     """
 
-    #@vcr.use_cassette(cassette_library_dir='./test_pyyawairlocal/fixtures/cassettes')
+    @vcr.use_cassette(cassette_library_dir='./test_pyyawairlocal/fixtures/cassettes')
     def test_get_dev_config(self):
         """
         Simple test to return dev_config. URL has no parameters
