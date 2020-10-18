@@ -1,0 +1,4 @@
+requests
+vcrpy
+python-coveralls
+nose
