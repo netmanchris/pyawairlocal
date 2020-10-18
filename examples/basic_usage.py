@@ -10,5 +10,5 @@ test_dev = AwairClient(host='10.101.20.52')
 
 x = get_dev_config(test_dev)
 
-get_dev_data(test_dev)
+x = get_dev_data(test_dev)
 

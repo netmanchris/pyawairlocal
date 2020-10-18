@@ -39,3 +39,20 @@ class TestGetDevConfig(TestCase):
         self.assertIs(type(dev_config),dict)
         for i in dev_config.keys():
             self.assertIn(i,my_attributes)
+
+class TestGetDevConfig(TestCase):
+    """
+    Test Case for pyawairlocal.data.get_dev_config function
+    """
+
+    @vcr.use_cassette(cassette_library_dir='./test_pyyawairlocal/fixtures/cassettes')
+    def test_get_dev_data(self):
+        """
+        Simple test to return dev_config. URL has no parameters
+        :return:
+        """
+        dev_config = get_dev_data(test_dev)
+        my_attributes = ['timestamp', 'score', 'temp', 'humid', 'co2', 'voc', 'pm25', 'lux', 'spl_a']
+        self.assertIs(type(dev_config),dict)
+        for i in dev_config.keys():
+            self.assertIn(i,my_attributes)
